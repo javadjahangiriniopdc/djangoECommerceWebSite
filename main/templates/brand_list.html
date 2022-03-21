@@ -9,7 +9,7 @@
 			{% for brand in data %}
 			<div class="col-md-3 mb-4">
 				<div class="card shadow">
-				<a href="#"><img src="/media/{{brand.image}}" class="card-img-top" alt="{{brand.title}}" /></a>
+				<a href="/brand-product-list/{{ brand.id }}"><img src="/media/{{brand.image}}" class="card-img-top" alt="{{brand.title}}" /></a>
 				<div class="card-body">
 					<h6 class="card-text"><a href="#">{{brand.title}}</a></h6>
 				</div>

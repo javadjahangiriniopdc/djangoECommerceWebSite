@@ -3,11 +3,16 @@ from django.contrib import admin
 # Register your models here.
 from main.models import *
 
-admin.site.register(Banner)
-
 admin.site.register(Brand)
 
 admin.site.register(Size)
+
+
+class BannerAdmin(admin.ModelAdmin):
+    list_display = ('alt_text', 'image_tag')
+
+
+admin.site.register(Banner, BannerAdmin)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -25,8 +30,8 @@ admin.site.register(Color, ColorAdmin)
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'brand', 'color', 'size', 'status')
-    list_editable = ('status',)
+    list_display = ('id', 'title', 'category', 'brand', 'status', 'is_featured')
+    list_editable = ('status', 'is_featured')
 
 
 admin.site.register(Product, ProductAdmin)
