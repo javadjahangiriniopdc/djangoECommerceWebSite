@@ -73,7 +73,6 @@ class Size(models.Model):
 # product Model
 class Product(models.Model):
     title = models.CharField(max_length=200)
-    image = models.ImageField(upload_to="product_imgs/")
     slug = models.CharField(max_length=400)
     detail = models.TextField()
     specs = models.TextField()
@@ -95,10 +94,13 @@ class ProductAttribute(models.Model):
     color = models.ForeignKey(Color, on_delete=models.CASCADE)
     size = models.ForeignKey(Size, on_delete=models.CASCADE)
     price = models.PositiveIntegerField()
+    image = models.ImageField(upload_to="product_imgs/", null=True)
 
     def __str__(self):
         return self.product.title
 
+    def image_tag(self):
+        return mark_safe('<img src="%s" width="50" height="50" />' % self.image.url)
+
     class Meta:
         verbose_name_plural = '7. ProductAttribute'
-
