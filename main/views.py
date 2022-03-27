@@ -64,7 +64,8 @@ def brand_product_list(request, brand_id):
 # Product Detials
 def product_detail(request, slug, id):
     product = Product.objects.get(id=id)
-    return render(request, 'product_detail.html', {'data': product})
+    related_products = Product.objects.filter(category=product.category).exclude(id=id)[:4]
+    return render(request, 'product_detail.html', {'data': product, 'related': related_products})
 
 
 # search
