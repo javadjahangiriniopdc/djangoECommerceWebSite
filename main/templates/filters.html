@@ -1,4 +1,5 @@
 {% load static %}
+
 <script type="text/javascript" src="{% static 'product-filter.js' %}"></script>
 <h3 class="mb-4 border-bottom pb-1">Filters</h3>
 <!-- Price Filter-->
@@ -6,10 +7,14 @@
     <h6 class="card-header">Price</h6>
     <div class="list-group list-group-flush">
         <li class="list-group-item">
-            <input type="range" id="rangeInput" min="0" max="100" oninput="maxPrice.value=this.value">
+            <input type="range" value="{{ minMaxPrice.price__min }}" id="rangeInput" min="{{ minMaxPrice.price__min }}" max="{{ minMaxPrice.price__max }}"
+                   oninput="maxPrice.value=this.value">
+            <p>{{ minMaxPrice.price__min }}-{{ minMaxPrice.price__max }}</p>
         </li>
         <li class="list-group-item">
-            Max: <input type="number" id="maxPrice" onkeyup="rangeInput.value=this.value" min="0" max="100">
+            Max: <input type="number" id="maxPrice" onkeyup="rangeInput.value=this.value" class="form-control"
+                     value="{{ minMaxPrice.price__min }}"   min="{{ minMaxPrice.price__min }}" max="{{ minMaxPrice.price__max }}">
+            <button  class="btn btn-info btn-sm mt-1">Filter</button>
         </li>
     </div>
 </div>
