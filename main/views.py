@@ -25,7 +25,8 @@ def brand_list(request):
 
 # product list
 def product_list(request):
-    data = Product.objects.all().order_by('-id')
+    total_data = Product.objects.count()
+    data = Product.objects.all().order_by('-id')[:3]
     cats = Product.objects.distinct().values('category__title', 'category_id')
     brands = Product.objects.distinct().values('brand__title', 'brand_id')
     colors = ProductAttribute.objects.distinct().values('color__title', 'color_id', 'color__color_code')
@@ -33,6 +34,7 @@ def product_list(request):
     return render(request, 'product_list.html',
                   {'data': data,
                    'cats': cats,
+                   'total_data': total_data,
                    'brands': brands,
                    'colors': colors,
                    'sizes': sizes,
@@ -78,12 +80,12 @@ def search(request):
 
 
 def filter_data(request):
-    colors=request.GET.getlist('color[]')
+    colors = request.GET.getlist('color[]')
     categories = request.GET.getlist('category[]')
     brands = request.GET.getlist('brand[]')
     sizes = request.GET.getlist('size[]')
-    minPrice=request.GET['minPrice']
-    maxPrice=request.GET['maxPrice']
+    minPrice = request.GET['minPrice']
+    maxPrice = request.GET['maxPrice']
     allProducts = Product.objects.all().order_by('-id').distinct()
     allProducts = allProducts.filter(productattribute__price__gte=minPrice)
     allProducts = allProducts.filter(productattribute__price__lte=maxPrice)
@@ -96,4 +98,13 @@ def filter_data(request):
     if len(sizes) > 0:
         allProducts = allProducts.filter(productattribute__size__id__in=sizes).distinct()
     t = render_to_string('ajax/product-list.html', {'data': allProducts})
+    return JsonResponse({'data': t})
+
+
+# load More Data
+def load_more_data(request):
+    offset =int(request.GET['offset'])
+    limit = int(request.GET['limit'])
+    data = Product.objects.all().order_by('-id')[offset:offset + limit]
+    t = render_to_string('ajax/product-list.html', {'data': data})
     return JsonResponse({'data': t})
