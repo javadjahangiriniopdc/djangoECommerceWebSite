@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Load-more-pagination-with-jQuery-ajax">
+      <change afterPath="$PROJECT_DIR$/main/migrations/0010_alter_productattribute_index_together.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0011_alter_productattribute_index_together_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/product_imgs/bottle-icons_DS2Y7Cl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/product_imgs/bottle-icons_GiebM3A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/product_imgs/bottle-icons_Yc2ZPvY.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/product_imgs/bottle-icons_mD2AQCm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26t6lSUdWNVJAu8zfUqTKPBSLXQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/templates" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\templates" />
+      <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="djangoECommerceWebSite" type="Python.DjangoServer" factoryName="Django server">
+      <module name="djangoECommerceWebSite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="djangoECommerceWebSite.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="" />
+      <created>1648230687990</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648230687990</updated>
+      <workItem from="1648230690688" duration="358000" />
+      <workItem from="1648231095165" duration="99000" />
+      <workItem from="1648231293543" duration="357000" />
+      <workItem from="1648232511429" duration="610000" />
+      <workItem from="1648296804219" duration="3000" />
+      <workItem from="1648376993171" duration="801000" />
+      <workItem from="1648388064063" duration="5014000" />
+      <workItem from="1648394296205" duration="6187000" />
+      <workItem from="1648400621924" duration="2379000" />
+      <workItem from="1648469284216" duration="9000" />
+      <workItem from="1648549249992" duration="978000" />
+      <workItem from="1648573942458" duration="13000" />
+      <workItem from="1648788135296" duration="2101000" />
+      <workItem from="1648790274186" duration="1396000" />
+      <workItem from="1648822699312" duration="4873000" />
+      <workItem from="1648887915476" duration="6950000" />
+    </task>
+    <task id="LOCAL-00001" summary="delete venv">
+      <created>1648230802396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648230802396</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Search-product-via-title-in-database">
+      <created>1648389810762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648389810762</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Show-related-products-on-product-detail-page">
+      <created>1648391359150</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648391359150</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Filter-data-with-jquery-ajax-in-ecommerce-Django">
+      <created>1648403022557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648403022557</updated>
+    </task>
+    <task id="LOCAL-00005" summary="product-price-and-add-price-range-filter">
+      <created>1648789787174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648789787174</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Show-product-min-max-price-with-price-range-filter">
+      <created>1648791605138</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648791605138</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Filter-products-with-jquery-ajax-with-price">
+      <created>1648823642540</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648823642540</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Load-more-pagination-with-jQuery-ajax">
+      <created>1648825700703</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648825700703</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="delete venv" />
+    <MESSAGE value="Search-product-via-title-in-database" />
+    <MESSAGE value="Show-related-products-on-product-detail-page" />
+    <MESSAGE value="Filter-data-with-jquery-ajax-in-ecommerce-Django" />
+    <MESSAGE value="product-price-and-add-price-range-filter" />
+    <MESSAGE value="Show-product-min-max-price-with-price-range-filter" />
+    <MESSAGE value="Filter-products-with-jquery-ajax-with-price" />
+    <MESSAGE value="Load-more-pagination-with-jQuery-ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load-more-pagination-with-jQuery-ajax" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/views.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

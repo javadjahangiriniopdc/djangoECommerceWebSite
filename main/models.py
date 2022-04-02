@@ -104,3 +104,6 @@ class ProductAttribute(models.Model):
 
     class Meta:
         verbose_name_plural = '7. ProductAttribute'
+        unique_together = [(
+            'product', 'color', 'size',
+        )]

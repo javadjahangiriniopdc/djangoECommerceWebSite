@@ -8,32 +8,34 @@
             <!-- Images -->
             <div class="col-md-4">
                 <img id="zoom_01" data-zoom-image="/media/{{ data.productattribute_set.first.image }}"
-                     src="/media/{{ data.productattribute_set.first.image }}" class="card-img-top" alt="{{ data.title }}">
+                     src="/media/{{ data.productattribute_set.first.image }}" class="card-img-top"
+                     alt="{{ data.title }}">
             </div>
             <div class="col-md-8">
                 <p>{{ data.detail }}</p>
                 <hr/>
                 <table class="table table-bordered">
                     <tr>
-                        <th>Price</th>
-                        <th>Rs. {{ data.productattribute_set.first.price }}</th>
-                    </tr>
-                    <tr>
                         <th>Colors</th>
                         <td>
-                            {% for p_attr in data.productattribute_set.all %}
-                                <button class="btn btn-lg"
-                                        style="background-color: {{ p_attr.color.color_code }} "></button>
+                            {#                            {% for p_attr in data.productattribute_set.all %}#}
+                            {% for color in colors %}
+                                <button class="btn btn-lg choose-color" data-color="{{ color.color__id }} "
+                                        style="background-color: {{ color.color__color_code }} "></button>
                             {% endfor %}
                         </td>
                     </tr>
                     <tr>
                         <th>Sizes</th>
                         <td>
-                            {% for p_attr in data.productattribute_set.all %}
-                                <button class="btn btn-outline-secondary btn-sm">{{ p_attr.size.title }} </button>
+                            {% for size in sizes %}
+                                <button   data-price="{{ size.price }}"  class="btn btn-outline-secondary btn-sm choose-size color{{ size.color__id }}">{{ size.size__title }} </button>
                             {% endfor %}
                         </td>
+                    </tr>
+                    <tr>
+                        <th>Price</th>
+                        <th>Rs. <span class="product-price"> {{ data.productattribute_set.first.price }}</span></th>
                     </tr>
                 </table>
                 <hr/>
@@ -55,7 +57,7 @@
                 <table class="table table-bordered">
                     <tr>
                         <th>Brand</th>
-                        <td><a href="#">{{ data.brand.title}}</a></td>
+                        <td><a href="#">{{ data.brand.title }}</a></td>
                     </tr>
                     <tr>
                         <th>Category</th>
@@ -92,32 +94,32 @@
                 </div>
             </div>
         </div>
-    <!-- Related Product-->
-    <h3 class="mt-4 mb-3 border-bottom bp-1 ">Related Products</h3>
-     <div class="row">
-                    {% for product in related %}
-                        <div class="col-md-3 mb-4">
-                            <div class="card shadow">
-                                <a href="/product/{{ product.slug }}/{{ product.id }}"><img
-                                        src="/media/{{ product.productattribute_set.first.image }}" class="card-img-top"
-                                        alt="{{ product.title }}<"></a>
-                                <div class="card-body">
-                                    <h6 class="card-text"><a
-                                            href="/product/{{ product.slug }}/{{ product.id }}">{{ product.title }}</a>
-                                    </h6>
-                                </div>
-                                <div class="card-footer">
-                                    <button class="btn btn-sm btn-primary"><i class="fa fa-shopping-cart"></i></button>
-                                    <button class="btn btn-sm btn-danger"><i class="fa fa-heart"></i></button>
-                                    <span class="float-right">
+        <!-- Related Product-->
+        <h3 class="mt-4 mb-3 border-bottom bp-1 ">Related Products</h3>
+        <div class="row">
+            {% for product in related %}
+                <div class="col-md-3 mb-4">
+                    <div class="card shadow">
+                        <a href="/product/{{ product.slug }}/{{ product.id }}"><img
+                                src="/media/{{ product.productattribute_set.first.image }}" class="card-img-top"
+                                alt="{{ product.title }}<"></a>
+                        <div class="card-body">
+                            <h6 class="card-text"><a
+                                    href="/product/{{ product.slug }}/{{ product.id }}">{{ product.title }}</a>
+                            </h6>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-primary"><i class="fa fa-shopping-cart"></i></button>
+                            <button class="btn btn-sm btn-danger"><i class="fa fa-heart"></i></button>
+                            <span class="float-right">
 					  		4.5/5
 					  		<i class="fa fa-star text-warning"></i>
 					  	</span>
-                                </div>
-                            </div>
                         </div>
-                    {% endfor %}
+                    </div>
                 </div>
+            {% endfor %}
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/gh/igorlino/elevatezoom-plus@1.2.3/src/jquery.ez-plus.js"></script>
     <script>
