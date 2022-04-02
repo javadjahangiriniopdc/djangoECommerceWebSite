@@ -103,28 +103,28 @@ $(document).ready(function(){
 	});
 	// End
 
-	// // Delete item from cart
-	// $(document).on('click','.delete-item',function(){
-	// 	var _pId=$(this).attr('data-item');
-	// 	var _vm=$(this);
-	// 	// Ajax
-	// 	$.ajax({
-	// 		url:'/delete-from-cart',
-	// 		data:{
-	// 			'id':_pId,
-	// 		},
-	// 		dataType:'json',
-	// 		beforeSend:function(){
-	// 			_vm.attr('disabled',true);
-	// 		},
-	// 		success:function(res){
-	// 			$(".cart-list").text(res.totalitems);
-	// 			_vm.attr('disabled',false);
-	// 			$("#cartList").html(res.data);
-	// 		}
-	// 	});
-	// 	// End
-	// });
+	// Delete item from cart
+	$(document).on('click','.delete-item',function(){
+		var _pId=$(this).attr('data-item');
+		var _vm=$(this);
+		// Ajax
+		$.ajax({
+			url:'/delete-from-cart',
+			data:{
+				'id':_pId,
+			},
+			dataType:'json',
+			beforeSend:function(){
+				_vm.attr('disabled',true);
+			},
+			success:function(res){
+				$(".cart-list").text(res.totalitems);
+				_vm.attr('disabled',false);
+				$("#cartList").html(res.data);
+			}
+		});
+		// End
+	});
 	//
 	// // Update item from cart
 	// $(document).on('click','.update-item',function(){
