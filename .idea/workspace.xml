@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Show-product-price-according-to-variation-Django">
+    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Add-to-cart-with-jquery-ajax-in-django-session-Django-eCommerce">
+      <change afterPath="$PROJECT_DIR$/main/templates/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/custom.js" afterDir="false" />
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -117,7 +118,8 @@
       <workItem from="1648788135296" duration="2101000" />
       <workItem from="1648790274186" duration="1396000" />
       <workItem from="1648822699312" duration="4873000" />
-      <workItem from="1648887915476" duration="14415000" />
+      <workItem from="1648887915476" duration="14880000" />
+      <workItem from="1648913553528" duration="2726000" />
     </task>
     <task id="LOCAL-00001" summary="delete venv">
       <created>1648230802396</created>
@@ -182,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648900372754</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add-to-cart-with-jquery-ajax-in-django-session-Django-eCommerce">
+      <created>1648910597020</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1648910597020</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +219,8 @@
     <MESSAGE value="Filter-products-with-jquery-ajax-with-price" />
     <MESSAGE value="Load-more-pagination-with-jQuery-ajax" />
     <MESSAGE value="Show-product-price-according-to-variation-Django" />
-    <option name="LAST_COMMIT_MESSAGE" value="Show-product-price-according-to-variation-Django" />
+    <MESSAGE value="Add-to-cart-with-jquery-ajax-in-django-session-Django-eCommerce" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add-to-cart-with-jquery-ajax-in-django-session-Django-eCommerce" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

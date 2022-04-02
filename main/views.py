@@ -120,6 +120,7 @@ def add_to_cart(request):
     # del request.session['cartdata']
     cart_p = {}
     cart_p[str(request.GET['id'])] = {
+        'image': request.GET['image'],
         'title': request.GET['title'],
         'qty': request.GET['qty'],
         'price': request.GET['price'],
@@ -138,3 +139,13 @@ def add_to_cart(request):
         request.session['cartdata'] = cart_p
 
     return JsonResponse({'data': request.session['cartdata'], 'totalitems': len(request.session['cartdata'])})
+
+
+# Cart List Page
+def cart_list(request):
+    total_amt = 0
+    for p_id, item in request.session['cartdata'].items():
+        total_amt += int(item['qty']) * float(item['price'])
+    return render(request, 'cart.html',
+                  {'cart_data': request.session['cartdata'], 'totalitems': len(request.session['cartdata']),
+                   'total_amt': total_amt})

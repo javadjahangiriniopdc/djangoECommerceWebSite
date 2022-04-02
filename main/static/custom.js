@@ -75,7 +75,8 @@ $(document).ready(function(){
 		// var _index=_vm.attr('data-index');
 		var _qty=$("#product-qty").val();
 		var _productId=$(".product-id").val();
-		// var _productImage=$(".product-image-").val();
+		var _productImage=$(".product-image").val();
+		console.log(_productImage)
 		var _productTitle=$(".product-title").val();
 		var _productPrice=$(".product-price").text();
 		// Ajax
@@ -83,7 +84,7 @@ $(document).ready(function(){
 			url:'/add-to-cart',
 			data:{
 				'id':_productId,
-				// 'image':_productImage,
+				'image':_productImage,
 				'qty':_qty,
 				'title':_productTitle,
 				'price':_productPrice

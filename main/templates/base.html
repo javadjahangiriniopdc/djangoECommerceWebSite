@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <form class="form-inline my-2 my-lg-0" action="/search">
                 <div class="input-group">
-                    <input name="q" type="text" class="form-control" placeholder="Search" />
+                    <input name="q" type="text" class="form-control" placeholder="Search"/>
                     <div class="input-group-append">
                         <button class="btn btn-dark" type="submit" id="button-addon2">Search</button>
                     </div>
@@ -44,7 +44,8 @@
                     <a class="nav-link text-white" href="{% url 'brand-list' %}">Brands</a>
                 </li>
                 <li class="nav-item">
-                    		        <a class="nav-link text-white" ><i class="fa fa-shopping-cart"></i> Cart (<span class="cart-list">{{request.session.cartdata|length}}</span>)</a>
+                    <a class="nav-link text-white" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i> Cart (<span
+                            class="cart-list">{{ request.session.cartdata|length }}</span>)</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -72,8 +73,8 @@
 <footer class="pt-4 my-md-5 pt-md-5 border-top container">
     <div class="row">
         <div class="col-12 col-md">
-            <a href="#">Django Sample Ecommerce WebSiie</a>
-            <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+            <a href="#">Django Sample Ecommerce WebSite</a>
+            <small class="d-block mb-3 text-muted">&copy; 2021-2022</small>
         </div>
         <div class="col-6 col-md">
             <h5>Features</h5>
