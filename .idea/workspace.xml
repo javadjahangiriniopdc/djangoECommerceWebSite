@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Update-cart-item-quanity-with-Jquery-Ajax-Django">
+    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Add-to-cart-with-jquery-ajax-from-every-page-Django">
+      <change afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_change_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_change_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/brand_product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/brand_product_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/category_product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/category_product_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoECommerceWebSite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoECommerceWebSite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoECommerceWebSite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoECommerceWebSite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +32,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -56,13 +66,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/templates/ajax" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/templates" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\templates\ajax" />
       <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\templates" />
+      <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\templates\ajax" />
       <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -120,7 +130,8 @@
       <workItem from="1648822699312" duration="4873000" />
       <workItem from="1648887915476" duration="14880000" />
       <workItem from="1648913553528" duration="5056000" />
-      <workItem from="1648981896103" duration="4224000" />
+      <workItem from="1648981896103" duration="4278000" />
+      <workItem from="1648999829662" duration="3649000" />
     </task>
     <task id="LOCAL-00001" summary="delete venv">
       <created>1648230802396</created>
@@ -213,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648983258600</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add-to-cart-with-jquery-ajax-from-every-page-Django">
+      <created>1648989407287</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648989407287</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,14 +263,15 @@
     <MESSAGE value="Add Cart Page" />
     <MESSAGE value="Cart-page-delete-item-from-cart-with-Jquery" />
     <MESSAGE value="Update-cart-item-quanity-with-Jquery-Ajax-Django" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update-cart-item-quanity-with-Jquery-Ajax-Django" />
+    <MESSAGE value="Add-to-cart-with-jquery-ajax-from-every-page-Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add-to-cart-with-jquery-ajax-from-every-page-Django" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main/views.py</url>
-          <line>73</line>
+          <line>75</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

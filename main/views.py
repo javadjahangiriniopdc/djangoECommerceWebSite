@@ -1,7 +1,9 @@
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
 from django.template.loader import render_to_string
+from .forms import SignupForm
+from django.contrib.auth import authenticate,login
 
 
 # Create your views here.
@@ -189,3 +191,19 @@ def update_from_cart(request):
                          {'cart_data': request.session['cartdata'], 'totalitems': len(request.session['cartdata']),
                           'total_amt': total_amt})
     return JsonResponse({'data': t, 'totalitems': len(request.session['cartdata'])})
+
+
+# SignUp
+def signup(request):
+    if request.method == 'POST':
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            pwd = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=pwd)
+            login(request, user)
+            return redirect('home')
+
+    form = SignupForm
+    return render(request, 'registration/signup.html', {'form': form})
