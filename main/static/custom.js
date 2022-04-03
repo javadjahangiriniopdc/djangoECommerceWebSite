@@ -72,13 +72,12 @@ $(document).ready(function(){
 	// Add to cart
 	$(document).on('click',".add-to-cart",function(){
 		var _vm=$(this);
-		// var _index=_vm.attr('data-index');
-		var _qty=$("#product-qty").val();
-		var _productId=$(".product-id").val();
-		var _productImage=$(".product-image").val();
-		console.log(_productImage)
-		var _productTitle=$(".product-title").val();
-		var _productPrice=$(".product-price").text();
+		var _index=_vm.attr('data-index');
+		var _qty=$(".product-qty-"+_index).val();
+		var _productId=$(".product-id-"+_index).val();
+		var _productImage=$(".product-image-"+_index).val();
+		var _productTitle=$(".product-title-"+_index).val();
+		var _productPrice=$(".product-price-"+_index).text();
 		// Ajax
 		$.ajax({
 			url:'/add-to-cart',
