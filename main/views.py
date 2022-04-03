@@ -168,3 +168,24 @@ def delete_from_cart(request):
                          {'cart_data': request.session['cartdata'], 'totalitems': len(request.session['cartdata']),
                           'total_amt': total_amt})
     return JsonResponse({'data': t, 'totalitems': len(request.session['cartdata'])})
+
+
+# Update Cart Item
+def update_from_cart(request):
+    p_id = str(request.GET['id'])
+    p_qty = request.GET['qty']
+
+    if 'cartdata' in request.session:
+        if p_id in request.session['cartdata']:
+            cart_data = request.session['cartdata']
+            cart_data[str(request.GET['id'])]['qty'] = p_qty
+            request.session['cartdata'] = cart_data
+
+    total_amt = 0
+    for p_id, item in request.session['cartdata'].items():
+        total_amt += int(item['qty']) * float(item['price'])
+
+    t = render_to_string('ajax/cart-list.html',
+                         {'cart_data': request.session['cartdata'], 'totalitems': len(request.session['cartdata']),
+                          'total_amt': total_amt})
+    return JsonResponse({'data': t, 'totalitems': len(request.session['cartdata'])})

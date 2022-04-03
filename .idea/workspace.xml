@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Add Cart Page">
-      <change afterPath="$PROJECT_DIR$/main/templates/ajax/cart-list.html" afterDir="false" />
+    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Cart-page-delete-item-from-cart-with-Jquery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/static/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/custom.js" afterDir="false" />
@@ -118,7 +117,8 @@
       <workItem from="1648790274186" duration="1396000" />
       <workItem from="1648822699312" duration="4873000" />
       <workItem from="1648887915476" duration="14880000" />
-      <workItem from="1648913553528" duration="4426000" />
+      <workItem from="1648913553528" duration="5056000" />
+      <workItem from="1648981896103" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="delete venv">
       <created>1648230802396</created>
@@ -197,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648916324980</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Cart-page-delete-item-from-cart-with-Jquery">
+      <created>1648918050736</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648918050736</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +234,8 @@
     <MESSAGE value="Show-product-price-according-to-variation-Django" />
     <MESSAGE value="Add-to-cart-with-jquery-ajax-in-django-session-Django-eCommerce" />
     <MESSAGE value="Add Cart Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Cart Page" />
+    <MESSAGE value="Cart-page-delete-item-from-cart-with-Jquery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cart-page-delete-item-from-cart-with-Jquery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
