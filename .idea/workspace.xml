@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Add-to-cart-with-jquery-ajax-from-every-page-Django">
-      <change afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_change_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_change_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/password_reset_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/registration/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoECommerceWebSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoECommerceWebSite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoECommerceWebSite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoECommerceWebSite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoECommerceWebSite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoECommerceWebSite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
@@ -67,10 +60,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/main/templates" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jahangiri\PycharmProjects\djangoECommerceWebSite\main\templates" />
       <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\templates" />
       <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\templates\ajax" />
       <recent name="C:\Users\javad\PycharmProjects\djangoECommerceWebSite\main\static" />
@@ -132,6 +126,7 @@
       <workItem from="1648913553528" duration="5056000" />
       <workItem from="1648981896103" duration="4278000" />
       <workItem from="1648999829662" duration="3649000" />
+      <workItem from="1649561718099" duration="3881000" />
     </task>
     <task id="LOCAL-00001" summary="delete venv">
       <created>1648230802396</created>
@@ -271,7 +266,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main/views.py</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

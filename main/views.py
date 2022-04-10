@@ -3,7 +3,8 @@ from django.shortcuts import render, redirect
 from .models import *
 from django.template.loader import render_to_string
 from .forms import SignupForm
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -207,3 +208,15 @@ def signup(request):
 
     form = SignupForm
     return render(request, 'registration/signup.html', {'form': form})
+
+
+# checkout
+@login_required
+def checkout(request):
+    #Process Payment
+    total_amt = 0
+    for p_id, item in request.session['cartdata'].items():
+        total_amt += int(item['qty']) * float(item['price'])
+    return render(request, 'checkout.html',
+                  {'cart_data': request.session['cartdata'], 'totalitems': len(request.session['cartdata']),
+                   'total_amt': total_amt})
