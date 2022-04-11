@@ -1,5 +1,11 @@
+from django.conf import settings
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
+
+from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
+from paypal.standard.forms import PayPalPaymentsForm
+
 from .models import *
 from django.template.loader import render_to_string
 from .forms import SignupForm
@@ -213,10 +219,32 @@ def signup(request):
 # checkout
 @login_required
 def checkout(request):
-    #Process Payment
+    # Process Payment
+    order_id = '123'
+    host = request.get_host()
+    paypal_dict = {
+        'business': settings.PAYPAL_RECEIVER_EMAIL,
+        'amount': 123,
+        'item_name': 'Item Name',
+        'invoice': 'INV_123',
+        'currency_code': 'USD',
+        'notify_url': 'http://{}{}'.format(host, reverse('paypal-ipn')),
+        'return_url': 'http://{}{}'.format(host, reverse('payment_done')),
+        'cancel_return': 'http://{}{}'.format(host, reverse('payment_cancelled')),
+    }
+    form = PayPalPaymentsForm(initial=paypal_dict)
     total_amt = 0
     for p_id, item in request.session['cartdata'].items():
         total_amt += int(item['qty']) * float(item['price'])
     return render(request, 'checkout.html',
                   {'cart_data': request.session['cartdata'], 'totalitems': len(request.session['cartdata']),
-                   'total_amt': total_amt})
+                   'total_amt': total_amt, 'form': form})
+
+@csrf_exempt
+def payment_done(request):
+    returnData = request.POST
+    return render(request, 'payment-success.html', {'data': returnData})
+
+@csrf_exempt
+def payment_canceled(request):
+    return render(request, 'payment-fail.html')
