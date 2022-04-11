@@ -38,7 +38,23 @@ admin.site.register(Product, ProductAdmin)
 
 
 class ProductAttributeAdmin(admin.ModelAdmin):
-    list_display = ('id', 'image_tag','product', 'color', 'size', 'price')
+    list_display = ('id', 'image_tag', 'product', 'color', 'size', 'price')
 
 
 admin.site.register(ProductAttribute, ProductAttributeAdmin)
+
+
+# order
+class CartOrderAdmin(admin.ModelAdmin):
+    list_display = ('user', 'total_amt', 'paid_status', 'order_dt')
+
+
+admin.site.register(CartOrder, CartOrderAdmin)
+
+
+# order
+class CartOrderItemsAdmin(admin.ModelAdmin):
+    list_display = ('order', 'invoice_no', 'item', 'image_tag', 'qty', 'price', 'total')
+
+
+admin.site.register(CartOrderItem, CartOrderItemsAdmin)

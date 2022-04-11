@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Shopping-cart-checkout">
-      <change afterPath="$PROJECT_DIR$/main/templates/payment-fail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/payment-success.html" afterDir="false" />
+    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Paypal-Payment-Django">
+      <change afterPath="$PROJECT_DIR$/main/migrations/0012_cartorder_cartorderitem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +124,7 @@
       <workItem from="1648981896103" duration="4278000" />
       <workItem from="1648999829662" duration="3649000" />
       <workItem from="1649561718099" duration="3976000" />
-      <workItem from="1649647420753" duration="4565000" />
+      <workItem from="1649647420753" duration="9903000" />
     </task>
     <task id="LOCAL-00001" summary="delete venv">
       <created>1648230802396</created>
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649586724933</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Paypal-Payment-Django">
+      <created>1649665343922</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1649665343922</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,17 +272,7 @@
     <MESSAGE value="Update-cart-item-quanity-with-Jquery-Ajax-Django" />
     <MESSAGE value="Add-to-cart-with-jquery-ajax-from-every-page-Django" />
     <MESSAGE value="Shopping-cart-checkout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shopping-cart-checkout" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main/views.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Paypal-Payment-Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paypal-Payment-Django" />
   </component>
 </project>
