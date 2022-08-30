@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Paypal-Payment-Django">
-      <change afterPath="$PROJECT_DIR$/main/migrations/0012_cartorder_cartorderitem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="c38d8b65-db3c-437d-9a26-7d457d1a271b" name="Changes" comment="Paypal-Payment-Django" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,6 +118,7 @@
       <workItem from="1648999829662" duration="3649000" />
       <workItem from="1649561718099" duration="3976000" />
       <workItem from="1649647420753" duration="9903000" />
+      <workItem from="1661828268535" duration="364000" />
     </task>
     <task id="LOCAL-00001" summary="delete venv">
       <created>1648230802396</created>
